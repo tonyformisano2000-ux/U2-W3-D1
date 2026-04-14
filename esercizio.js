@@ -11,7 +11,8 @@ class User {
 
 const inviaForm = (e) => {
   e.preventDefault();
-  const infos = document.querySelectorAll("input").value;
-  console.log(infos);
+  const infos = document.querySelectorAll("input");
+  const arrayInfos = Array.from(infos).map((input) => input.value);
+  console.log(arrayInfos);
   return infos;
 };
